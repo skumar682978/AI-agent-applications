@@ -1,0 +1,150 @@
+F:\multi-modal>python finance-agent.py
+
+|----------------------------------------------------------------------------------------------------|
+|              Question -> What is the stock price of NVDA                                           |
+|                       -> Write a comparison between NVDA and AMD, use all tools available          |
+|----------------------------------------------------------------------------------------------------|
+
+╭──────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Message  │ What is the stock price of NVDA                                                                                                       │
+├──────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ Response │                                                                                                                                       │
+│ (3.0s)   │  • Running: get_current_stock_price(symbol=NVDA)                                                                                      │
+│          │                                                                                                                                       │
+│          │ The current stock price of NVDA is $1208.88.                                                                                          │
+╰──────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+╭──────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Message  │ Write a comparison between NVDA and AMD, use all tools available.                                                                     │
+├──────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ Response │ Running:                                                                                                                              │
+│ (22.6s)  │                                                                                                                                       │
+│          │  • get_company_info(symbol=NVDA)                                                                                                      │
+│          │  • get_company_info(symbol=AMD)                                                                                                       │
+│          │  • get_current_stock_price(symbol=NVDA)                                                                                               │
+│          │  • get_current_stock_price(symbol=AMD)                                                                                                │
+│          │  • get_analyst_recommendations(symbol=NVDA)                                                                                           │
+│          │  • get_analyst_recommendations(symbol=AMD)                                                                                            │
+│          │  • get_company_news(symbol=NVDA, num_stories=3)                                                                                       │
+│          │  • get_company_news(symbol=AMD, num_stories=3)                                                                                        │
+│          │                                                                                                                                       │
+│          │ ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── │
+│          │                                                                                                                                       │
+│          │                                                       NVIDIA Corporation (NVDA)                                                       │
+│          │                                                                                                                                       │
+│          │ General Information:                                                                                                                  │
+│          │                                                                                                                                       │
+│          │  • Name: NVIDIA Corporation                                                                                                           │
+│          │  • Symbol: NVDA                                                                                                                       │
+│          │  • Industry: Semiconductors                                                                                                           │
+│          │  • Headquarters: Santa Clara, California, United States                                                                               │
+│          │  • Website: NVIDIA                                                                                                                    │
+│          │  • Employees: 29,600                                                                                                                  │
+│          │                                                                                                                                       │
+│          │ Business Overview: NVIDIA provides graphics and compute and networking solutions in several markets including gaming, professional    │
+│          │ visualization, data center, and automotive sectors. Their products include GeForce GPUs for gaming, Quadro/NVIDIA RTX for enterprise  │
+│          │ graphics, and networking platforms such as Quantum for InfiniBand and Spectrum for Ethernet. Additionally, NVIDIA offers the DRIVE    │
+│          │ automated-driving platform and Jetson robotics.                                                                                       │
+│          │                                                                                                                                       │
+│          │ Financial Highlights:                                                                                                                 │
+│          │                                                                                                                                       │
+│          │  • Current Stock Price: $1208.88                                                                                                      │
+│          │  • Market Cap: $29.74 trillion                                                                                                        │
+│          │  • EPS: 1.7                                                                                                                           │
+│          │  • P/E Ratio: 711.11                                                                                                                  │
+│          │  • 52 Week Low/High: $386.18 / $1255.87                                                                                               │
+│          │  • Cash Flow:                                                                                                                         │
+│          │     • Total Cash: $31.44 billion                                                                                                      │
+│          │     • Free Cash Flow: $29.02 billion                                                                                                  │
+│          │     • Operating Cash Flow: $40.53 billion                                                                                             │
+│          │  • EBITDA: $49.27 billion                                                                                                             │
+│          │  • Revenue Growth: 262.1%                                                                                                             │
+│          │  • Gross Margins: 75.3%                                                                                                               │
+│          │  • EBITDA Margins: 61.8%                                                                                                              │
+│          │                                                                                                                                       │
+│          │ Analyst Recommendations:                                                                                                              │
+│          │                                                                                                                                       │
+│          │  • Current anlyst opinions: 47                                                                                                        │
+│          │  • Recommendations: Buy                                                                                                               │
+│          │                                                                                                                                       │
+│          │ Recent News:                                                                                                                          │
+│          │                                                                                                                                       │
+│          │  1 The Hottest New Celebrity Is…a Chip CEO                                                                                            │
+│          │  2 Dow Jones Futures: Market Split, But Enough Stocks To Buy; Apple, Tesla, Fed On Tap                                                │
+│          │  3 Morningstar | A Weekly Summary of Stock Ideas and Developments in the Companies We Cover                                           │
+│          │                                                                                                                                       │
+│          │ ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── │
+│          │                                                                                                                                       │
+│          │                                                  Advanced Micro Devices, Inc. (AMD)                                                   │
+│          │                                                                                                                                       │
+│          │ General Information:                                                                                                                  │
+│          │                                                                                                                                       │
+│          │  • Name: Advanced Micro Devices, Inc.                                                                                                 │
+│          │  • Symbol: AMD                                                                                                                        │
+│          │  • Industry: Semiconductors                                                                                                           │
+│          │  • Headquarters: Santa Clara, California, United States                                                                               │
+│          │  • Website: AMD                                                                                                                       │
+│          │  • Employees: 26,000                                                                                                                  │
+│          │                                                                                                                                       │
+│          │ Business Overview: AMD operates through several segments including Data Center, Client, Gaming, and Embedded. The company's product   │
+│          │ lines include microprocessors, GPUs, chipsets, data center GPUs, and embedded processors. Additionally, AMD offers various other      │
+│          │ products under well-known brands such as AMD Ryzen, AMD Athlon, AMD Radeon, and EPYC.                                                 │
+│          │                                                                                                                                       │
+│          │ Financial Highlights:                                                                                                                 │
+│          │                                                                                                                                       │
+│          │  • Current Stock Price: $167.87                                                                                                       │
+│          │  • Market Cap: $271.33 billion                                                                                                        │
+│          │  • EPS: 0.69                                                                                                                          │
+│          │  • P/E Ratio: 243.29                                                                                                                  │
+│          │  • 52 Week Low/High: $93.12 / $227.3                                                                                                  │
+│          │  • Cash Flow:                                                                                                                         │
+│          │     • Total Cash: $6.03 billion                                                                                                       │
+│          │     • Free Cash Flow: $2.39 billion                                                                                                   │
+│          │     • Operating Cash Flow: $1.7 billion                                                                                               │
+│          │  • EBITDA: $3.84 billion                                                                                                              │
+│          │  • Revenue Growth: 2.2%                                                                                                               │
+│          │  • Gross Margins: 50.6%                                                                                                               │
+│          │  • EBITDA Margins: 16.8%                                                                                                              │
+│          │                                                                                                                                       │
+│          │ Analyst Recommendations:                                                                                                              │
+│          │                                                                                                                                       │
+│          │  • Current analyst opinions: 41                                                                                                       │
+│          │  • Recommendations: Buy                                                                                                               │
+│          │                                                                                                                                       │
+│          │ Recent News:                                                                                                                          │
+│          │                                                                                                                                       │
+│          │  1 Advanced Micro Devices Insider Sold Shares Worth $23,557,973, According to a Recent SEC Filing                                     │
+│          │  2 Is Advanced Micro Devices Inc. (NASDAQ:AMD) Catching Up To NVDA?                                                                   │
+│          │  3 AMD fires latest shot at Nvidia in AI-chip war                                                                                     │
+│          │                                                                                                                                       │
+│          │ ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── │
+│          │                                                                                                                                       │
+│          │                                                              Comparison                                                               │
+│          │                                                                                                                                       │
+│          │  1 Market Capitalization:                                                                                                             │
+│          │     • NVIDIA: $29.74 trillion                                                                                                         │
+│          │     • AMD: $271.33 billion                                                                                                            │
+│          │  2 Stock Price:                                                                                                                       │
+│          │     • NVIDIA: $1208.88                                                                                                                │
+│          │     • AMD: $167.87                                                                                                                    │
+│          │  3 Revenue Growth:                                                                                                                    │
+│          │     • NVIDIA: 262.1%                                                                                                                  │
+│          │     • AMD: 2.2%                                                                                                                       │
+│          │  4 Profitability Metrics:                                                                                                             │
+│          │     • NVIDIA Gross Margins: 75.3%                                                                                                     │
+│          │     • AMD Gross Margins: 50.6%                                                                                                        │
+│          │     • NVIDIA EBITDA Margins: 61.8%                                                                                                    │
+│          │     • AMD EBITDA Margins: 16.8%                                                                                                       │
+│          │  5 Analyst Recommendations:                                                                                                           │
+│          │     • Both companies have "Buy" recommendations from analysts, with NVIDIA having slightly more consensus among analysts (47 vs. 41). │
+│          │  6 Latest News:                                                                                                                       │
+│          │     • For NVIDIA, recent news highlights significant media attention and involvement in wider market trends.                          │
+│          │     • For AMD, news includes insider trading activity, performance in comparison to NVIDIA, and competition in the AI-chip sector.    │
+│          │                                                                                                                                       │
+│          │ In summary, while NVIDIA shows higher financial robustness and market attention, AMD also remains a significant competitor in the     │
+│          │ semiconductor industry with strong product offerings and strategic moves. Both companies are recommended by analysts, indicating      │
+│          │ confidence in their future performance.                                                                                               │
+│          │                                                                                                                                       │
+│          │ ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── │
+╰──────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+F:\multi-modal>
