@@ -8,7 +8,7 @@ These three projects demonstrate the use of different assistant agents powered b
 - Components: Utilizes DuckDbAssistant and OpenAIChat.
 - Setup: Loads environment variables for the OpenAI API key and defines a semantic model describing a "movies" table sourced from a CSV file.
 - Functionality: Capable of responding to queries about the highest-rated movie in 2020 and different categories of movies, generating SQL code and presenting the responses in Markdown format.
-- 
+  
 ## Financial Agent:
 
 - Purpose: Provides financial data and analysis.
